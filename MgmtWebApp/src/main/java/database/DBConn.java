@@ -22,7 +22,7 @@ public class DBConn
         {
             System.out.println("in con");
             Class.forName("com.mysql.cj.jdbc.Driver");
-			 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/life_insurance_db", "test", "test");
+			 con=DriverManager.getConnection("jdbc:mysql://lp-r90g5mep:3306/life_insurance_db", "test", "test");
             System.out.println("after con");
         }
         catch(Exception e)

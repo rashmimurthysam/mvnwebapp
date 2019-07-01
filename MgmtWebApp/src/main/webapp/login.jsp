@@ -12,7 +12,7 @@ String usid;
 
 <%
 Class.forName("com.mysql.cj.jdbc.Driver");
-Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/life_insurance_db", "test", "test");
+Connection con=DriverManager.getConnection("jdbc:mysql://lp-r90g5mep:3306/life_insurance_db", "test", "test");
 int userid=Integer.parseInt(request.getParameter("userid").trim());
 usid=request.getParameter("userid").trim();
 
