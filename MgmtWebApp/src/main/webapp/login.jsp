@@ -12,7 +12,7 @@
 		System.out.println("Inside login.jsp");
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		System.out.println("Inside login.jsp - got class - ");
-		Connection con = DriverManager.getConnection("jdbc:mysql://192.168.1.5:3306/life_insurance_db", "test",
+		Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/life_insurance_db", "test",
 				"test");
 		System.out.println("Inside login.jsp - got connection - " + con.getMetaData().getURL());
 		int userid = Integer.parseInt(request.getParameter("userid").trim());
