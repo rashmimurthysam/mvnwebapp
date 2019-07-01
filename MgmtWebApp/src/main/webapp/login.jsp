@@ -11,8 +11,11 @@ String usid;
 %> 
 
 <%
+System.out.println("Inside login.jsp");
 Class.forName("com.mysql.cj.jdbc.Driver");
+System.out.println("Inside login.jsp - got class");
 Connection con=DriverManager.getConnection("jdbc:mysql://lp-r90g5mep:3306/life_insurance_db", "test", "test");
+System.out.println("Inside login.jsp - got connection - " + con.getMetaData().getURL());
 int userid=Integer.parseInt(request.getParameter("userid").trim());
 usid=request.getParameter("userid").trim();
 
