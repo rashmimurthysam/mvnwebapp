@@ -22,7 +22,8 @@ public class DBConn
         {
             System.out.println("in con");
             Class.forName("com.mysql.cj.jdbc.Driver");
-			 con=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/life_insurance_db", "test", "test");
+			 con=DriverManager.getConnection("jdbc:mysql://life-insurance-db.czoolxtyfpit.us-east-1.rds.amazonaws.com/life_insurance_mgmt", "rootuser",
+						"rootpassword");
             System.out.println("after con");
         }
         catch(Exception e)
